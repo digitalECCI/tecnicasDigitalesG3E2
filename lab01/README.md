@@ -1,44 +1,58 @@
         
-# Lab01 - Sumador/Restador de 4 bits
+# Laboratorio 1: Introducción a la lógica combinacional 
 
-# Integrantes
-    * [<!-- Remplace aqui nombre 1. -->](<!-- Remplace aqui link de usario 1 de github -->) 
-    * [<!-- Remplace aqui nombre 2. -->](<!-- Remplace aqui link de usario 2 de github -->) 
-    * [<!-- Remplace aqui nombre 3. -->](<!-- Remplace aqui link de usario 3 de github -->) 
-# Informe
+## Integrantes
+* [Ivan Eduardo Beltran Prieto]
+(https://github.com/ivanedbeltranpr-star)
+* [Cristian Camilo Romero Contreras]
+(https://github.com/cristiancaromeroco-dotcom)
+* [Sebastian Ferney Gutierrez] 
+## Informe
 
 Indice:
 
 1. [Documentación](#documentación-de-los-circuitos-implementados-implementado)
 2. [Simulaciones](#simulaciones)
 3. [Evidencias de implementación](#evidencias-de-implementación)
-4. [Preguntas](#preguntas)
-5. [Conclusiones](#conclusiones)
-6. [Referencias](#referencias)
+4. [Conclusiones](#conclusiones)
+5. [Referencias](#referencias)
 
 ## Documentación del diseño implementado
 
-### 1. Sumador/Restador
+### 1. Compuertas
 
 #### 1.1 Descripción
 
 #### 1.2 Diagramas
 
+### 2. Verificador De Números Primos
+
+#### 2.1 Descripción
+
+#### 2.2 Diagramas
+
+### 3. Sumador De 1 Bit
+
+#### 3.1 Descripción
+
+#### 3.2 Diagramas
 
 ## Simulaciones 
 
-### 1. Simulación del sumador/restador
+### 1. Simulación Compuertas
 
-#### 1.1 Descripción
+### 2. Simulacion Verificador De Numeros Primos 
 
-#### 1.2 Diagrama
-
+### 3. Simulacion De Sumador De 1 Bit
 
 ## Evidencias de implementación
+### 1. Compuertas
+### 2. Verficador De Numeros Primos 
+### 3. Sumador De 1 Bit
 
 
 ## Conclusiones
 
 
-## Referencias
+
 
