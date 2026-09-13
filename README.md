@@ -18,106 +18,59 @@ Este es el repositorio de la asignatura tecnicas digitales.
 
 Indice:
 
-1. [Compuertas](#Compuertas)
-2. [Verificador de numeros primos](#verificador-de-numeros-primos)
-3. [Sumador de 1 bit](#sumador-de-1-bit)
-4. [Simulaciones](#simulaciones)
-5. [Evidencias de implementación](#evidencias-de-implementación)
-6. [Conclusiones](#conclusiones)
+1. [Sumador de 4 bits](#sumador-de-4-bits)
+2. [Simulaciones](#simulaciones)
+3. [Evidencias de implementación](#evidencias-de-implementación)
+4. [Conclusiones](#conclusiones)
 
 
 ## Documentación del diseño implementado
 
-## 1. Compuertas
-
+## 1. Sumador de 4 bits
 
 #### 1.1 Descripción
 
-AND: Produce un nivel alto (1) solo si ambas señales de entrada (A y B) están activas en 1 simultáneamente.
-
-NOT: Invierte el valor lógico que recibe; un valor de 1 a la entrada resulta en un 0 a la salida, e igualmente un valor de 0 cambia a 1.
-
-OR(O): Entrega un resultado de 1 si cualquiera de las entradas (A, B o ambas) presenta un estado lógico 1.
-
-XNOR: Mantiene la salida en 1 exclusivamente si las entradas A y B poseen exactamente la misma condición lógica.
-
-XOR: Genera una salida en 1 únicamente cuando las señales de entrada A y B tienen estados lógicos distintos.
-
-#### 1.2 Diagramas
-
-![Descripción de la imagen](./lab01/Imagen.png)
-![Descripción de la imagen](./lab01/Imagen1.png)
-![Descripción de la imagen](./lab01/Imagen2.png)
-![Descripción de la imagen](./lab01/Imagen3.png)
-![Descripción de la imagen](./lab01/Imagen4.png)
-
-## 2. Verificador de Numeros Primos
+Es un módulo digital combinacional diseñado para procesar la adición de dos palabras binarias de 4 bits cada una (\(A\) y \(B\)), en conjunto con un bit de acarreo de entrada inicial (\(C_{in}\)). Como resultado, entrega una palabra de 4 bits correspondiente al resultado directo de la suma (\(S\)), y un bit de acarreo saliente final (\(C_{out}\)), que transmite el desborde hacia una etapa o posición superior.
 
 
-#### 2.1 Descripción
+En la siguiente imagen se evidencia la implementación del código fuente en Verilog para un sumador estructural de 4 bits. En el diseño se puede observar el uso de la metodología modular, donde se conectan en cascada cuatro sumadores individuales de 1 bit para conformar el sistema completo:
 
-Se trata de un sistema digital combinacional diseñado con tres variables de entrada (A, B y C), las cuales integran un dato numérico en formato binario. El valor equivalente en base decimal depende de la posición de cada bit: $A$ representa el valor de mayor peso ($2^2 = 4$), $B$ equivale a la posición intermedia ($2^1 = 2$) y $C$ es el bit menos significativo ($2^0 = 1$), obteniendo el total mediante la relación $A \cdot 4 + B \cdot 2 + C \cdot 1$. El propósito del circuito es analizar dicha cantidad y generar un valor lógico alto ($S = 1$) siempre que la cifra calculada sea un número primo.
+En las primeras líneas se definen las entradas principales correspondientes a los dos vectores. Se evidencia la declaración de señales internas mediante cables (wire C0, C1, C2). Estas variables tienen la función de propagar el acarreo.
 
-Caso práctico: Si las señales ingresan como $A=1$, $B=0$ y $C=1$, el resultado equivale a $1 \cdot 4 + 0 \cdot 2 + 1 \cdot 1 = 5$. Al ser el 5 un entero primo, la salida del circuito responderá activándose en $S = 1$.
-
-#### 2.2 Diagramas
-![Descripción de la imagen](./lab01/Imagen5.png)
-
-## 3. Sumador de 1 bit
-
-#### 3.1 Descripción
-
-Es un módulo digital combinacional encendido para procesar la adición de un par de bits (A y B) en conjunto con un bit de acarreo previo ($C_i$). Como resultado, entrega dos señales: $S$, correspondiente al resultado directo de la suma, y $C_o$, que transmite el acarreo saliente hacia la etapa o posición superior.
-
-![Descripción de la imagen](./lab01/Imagen6.png)
+![Descripción de la imagen](./lab01/a.jpg)
+![Descripción de la imagen](./lab01/b.jpg)
 
 ## Simulaciones
 
-### 1. Simulacion de compuertas
-![Descripción de la imagen](./lab01/Imagen7.png)
-![Descripción de la imagen](./lab01/Imagen8.png)
-![Descripción de la imagen](./lab01/Imagen9.png)
-![Descripción de la imagen](./lab01/Imagen10.png)
-![Descripción de la imagen](./lab01/Imagen11.png)
+### 1. Simulacion De Sumador De 4 Bits 
+En la siguiente imagen se evidencia la simulación temporal del módulo sumador de 4 bits mediante el software GTKWave, utilizando los resultados generados por el banco de pruebas (testbench). En las gráficas temporales se puede observar el comportamiento dinámico del circuito combinacional ante diferentes estímulos de entrada.
 
-### 2. Simuacion de verificador de Numeros Primos
-![Descripción de la imagen](./lab01/Imagen12.png)
-
-### 3. Simulacion de Sumador de 1 bit 
-![Descripción de la imagen](./lab01/Imagen13.png)  
+![Descripción de la imagen](./lab01/c.jpg)
 
 ## Codigos En Visual
 
-### Compuertas
-![Descripción de la imagen](./lab01/Imagen14.png)
-![Descripción de la imagen](./lab01/Imagen15.png)
-![Descripción de la imagen](./lab01/Imagen16.png)
-![Descripción de la imagen](./lab01/Imagen17.png)
-![Descripción de la imagen](./lab01/Imagen18.png)
-![Descripción de la imagen](./lab01/Imagen19.png)
+En las siguientes imágenes se evidencia la estructura completa y la lógica de validación para el banco de pruebas (testbench) del sumador de 4 bits (sumador4b_tb.v). El código permite verificar el comportamiento del diseño mediante la generación automática de estímulos temporales:Configuración y Conexión del Módulo (UUT): En la primera sección se observa la declaración de registros (reg) para manejar los estímulos de entrada y cables (wire) para monitorear las salidas.
 
-### Verificador De Numeros Primos
-![Descripción de la imagen](./lab01/Imagen20.png)
+Se evidencia la implementación de bloques initial y ciclos anidados for que iteran las variables enteras i y j desde 0 hasta 15. Esta lógica permite evaluar de manera automatizada las 256 combinaciones matemáticas posibles entre los dos vectores de entrada, repitiendo el proceso tanto para un acarreo inicial cin = 0 como para cin = 1.
 
-### Sumador De 1 Bit 
-![Descripción de la imagen](./lab01/Imagen21.png)
+![Descripción de la imagen](./lab01/d.jpg)
+![Descripción de la imagen](./lab01/e.jpg)
+![Descripción de la imagen](./lab01/f.jpg)
+![Descripción de la imagen](./lab01/g.jpg)
+
 
 ## Evidencias De Implementacion
 
-[Compuertas]
-(https://youtube.com/shorts/VRBLdVCifJQ?si=eIwbnneUCkzF0Av2)
+[Sumador de 4 bits]
+(https://youtube.com/shorts/q10I84cNXOU?feature=share)
 
 ## Conclusiones
 
-Compuertas lógicas: Se verificó el funcionamiento de OR, AND, NOT, XOR y XNOR comparando sus tablas de verdad con las simulaciones en Verilog.
-
-Aplicación práctica: Diseñar en Verilog permitió llevar la teoría de lógica booleana a la práctica y comprobar las salidas de cada circuito.
-
-Detector de primos: Se comprobó cómo usar lógica combinacional para tomar decisiones, identificando números primos entre el 0 y el 7.
-
-Sumador de 1 bit: Se entendió el manejo de la suma y el acarreo, componente clave para operaciones aritméticas más complejas.
-
-Uso de Verilog: La práctica reforzó el uso del lenguaje de descripción de hardware para simular y analizar sistemas digitales.
+* El diseño estructural facilitó la reutilización de bloques independientes.
+* La simulación gráfica validó el comportamiento lógico del sistema.
+* El módulo procesó adecuadamente los desbordes numéricos binarios.
+* Los ciclos anidados aseguraron una verificación exhaustiva completa.
+* El banco de pruebas automatizado optimizó el tiempo de diagnóstico.
 
 ## Referencias
 
