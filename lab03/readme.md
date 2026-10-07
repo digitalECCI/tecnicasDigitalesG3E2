@@ -18,7 +18,8 @@ Este es el repositorio de la asignatura tecnicas digitales.
 
 Indice:
 
-1. [Sumador de 4 bits](#sumador-de-4-bits)
-2. [Simulaciones](#simulaciones)
-3. [Evidencias de implementación](#evidencias-de-implementación)
-4. [Conclusiones](#conclusiones)
+1. [Sumador de 3 bits](#sumador-de-3-bits)
+2. [Display 7 segmentos](#Display-7-segmentos)
+3. [Simulaciones](#simulaciones)
+4. [Evidencias de implementación](#evidencias-de-implementación)
+5. [Conclusiones](#conclusiones)
