@@ -57,6 +57,24 @@ A través de una sentencia case, el sistema evalúa la entrada binaria y asigna 
 
 Resultados de la simulación temporal en GTKWave para un sumador de 3 bits con decodificador a 7 segmentos, donde se verifica el correcto comportamiento dinámico de las salidas (seg[6:0]) ante diferentes combinaciones de estímulos en las entradas binarias (A, B y Cin).
 
+![Descripción de la imagen](img/imagen4.jpg) 
+
+## Evidencias De La Implementación
+
+(https://youtube.com/shorts/SeO5JDsv-24?feature=share)
+
+## Conclusiones 
+
+* Integración Exitosa: Se validó el correcto funcionamiento modular al conectar el sumador de 3 bits con el decodificador de 7 segmentos en un solo sistema jerárquico.
+* Comprobación Funcional: La simulación en GTKWave demostró la precisión aritmética del circuito y la correcta visualización de los resultados en todas las pruebas temporales.
+* Validación de la Lógica: Se verificó experimentalmente la operación en lógica negativa (ánodo común), confirmando que los segmentos se encienden correctamente con ceros lógicos (0).
+* Seguridad del Diseño: El uso de la sentencia por defecto funcionó de forma óptima, garantizando un comportamiento estable y libre de estados indeterminados en el hardware.
+
+## Referencias
+
+* Chu, P. P. (2008). FPGA Prototyping by Verilog Examples: Xilinx Spartan-3 Version. Wiley-Interscience. KFUPM.
+* Harris, D. M., & Harris, S. L. (2007). Digital Design and Computer Architecture. Morgan Kaufmann. R-5.
+
 
 
 
