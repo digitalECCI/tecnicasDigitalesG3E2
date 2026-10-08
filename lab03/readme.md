@@ -7,11 +7,11 @@ Este es el repositorio de la asignatura tecnicas digitales.
 
 ## Integrantes
 
-* [Ivan Eduardo Beltran Prieto]
+* Ivan Eduardo Beltran Prieto
 (https://github.com/ivanedbeltranpr-star)
-* [Cristian Camilo Romero Contreras]
+* Cristian Camilo Romero Contreras
 (https://github.com/cristiancaromeroco-dotcom)
-* [Sebastian Ferney Gutierrez Mondragón]
+* Sebastian Ferney Gutierrez Mondragón
 (https://github.com/sebastianfegutierrezmo-ops)
 
 # Informe
@@ -32,6 +32,7 @@ Indice:
 
 El archivo adjunto muestra un banco de pruebas o testbench en Verilog diseñado exclusivamente para simular y validar el comportamiento de un sumador de 3 bits. El código define los registros de entrada necesarios para los dos sumandos binarios de tres bits (A y B) junto al acarreo de entrada (Cin), así como un cable bus de salida de 7 bits (seg) encargado de recibir el resultado de la operación. Posteriormente, se realiza la instanciación de la Unidad Bajo Prueba (UUT), enlazando de forma directa estas señales del entorno de simulación con los puertos físicos del circuito modular del sumador.
 
-![Descripción de la imagen](img/1a.jpg)
+![Descripción de la imagen](img/imagen1.jpg)  
+![Descripción de la imagen](img/imagen2.jpg)  
 
 
