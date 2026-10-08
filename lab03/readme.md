@@ -35,4 +35,21 @@ El archivo adjunto muestra un banco de pruebas o testbench en Verilog diseñado 
 ![Descripción de la imagen](img/imagen1.jpg)  
 ![Descripción de la imagen](img/imagen2.jpg)  
 
+## 1.2 Módulo Decodificador de 7 Segmentos
+
+#### 1.1 Descripción
+
+El código implementado en Verilog describe el comportamiento de un circuito combinacional encargado de decodificar una entrada binaria de 4 bits para controlar un display de 7 segmentos en una tarjeta de desarrollo como la FPGA.
+
+##### Puertos de Entrada y Salida:
+	• El módulo recibe un vector de entrada de 4 bits (codigo_bin), lo que permite un rango de 16 combinaciones posibles (del 0 al 15 en base diez).
+	• Dispone de un vector de salida tipo registro de 7 bits (segmentos), donde cada bit está asignado a un led específico del display siguiendo el orden conceptual g-f-e-d-c-b-a.:
+	• El módulo recibe un vector de entrada de 4 bits (codigo_bin), lo que permite un rango de 16 combinaciones posibles (del 0 al 15 en base diez).
+	• Dispone de un vector de salida tipo registro de 7 bits (segmentos), donde cada bit está asignado a un led específico del display.
+  • Estructura de Decodificación y Actuación:
+A través de una sentencia case, el sistema evalúa la entrada binaria y asigna el patrón correspondiente en el display. El diseño opera bajo lógica negativa (ánodo común), lo que significa que un bit en 0 enciende el segmento y un bit en 1 lo apaga.
+
+
+
+
 
