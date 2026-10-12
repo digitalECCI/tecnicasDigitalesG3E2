@@ -60,6 +60,18 @@ Resultados de la simulación temporal en GTKWave para un sumador de 3 bits con d
 
 ![Descripción de la imagen](img/imagen4.jpg) 
 
+## Simulaciones
+
+### Módulo Decodificador de 7 Segmentos
+
+Esta simulación en GTKWave valida el funcionamiento del módulo decodificador binario a 7 segmentos, verificando la traducción de cada dígito bajo lógica de ánodo común:
+• Transición Secuencial: Se observa cómo la entrada binaria cambia secuencialmente del 0 al 4 controlada por un iterador matemático (i).
+• Entrada 0: La salida es 40 (Hexadecimal), encendiendo los segmentos necesarios para proyectar el número 0.
+• Entrada 1: La salida cambia a 79 (Hexadecimal), lo que activa únicamente los segmentos B y C para formar el número 1.
+• Entradas 2, 3 y 4: El circuito responde de forma inmediata actualizando los vectores a 24, 30 y 19 (Hexadecimal) respectivamente, asegurando un comportamiento combinacional correcto.
+
+![Descripción de la imagen](img/imagen6.jpg) 
+
 ## Evidencias De La Implementación
 
 (https://youtube.com/shorts/SeO5JDsv-24?feature=share)
