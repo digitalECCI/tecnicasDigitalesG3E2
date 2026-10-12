@@ -50,6 +50,7 @@ El código implementado en Verilog describe el comportamiento de un circuito com
 A través de una sentencia case, el sistema evalúa la entrada binaria y asigna el patrón correspondiente en el display. El diseño opera bajo lógica negativa (ánodo común), lo que significa que un bit en 0 enciende el segmento y un bit en 1 lo apaga.
 
 ![Descripción de la imagen](img/imagen3.jpg)  
+![Descripción de la imagen](img/imagen5.jpg)  
 
 ## Simulaciones
 
