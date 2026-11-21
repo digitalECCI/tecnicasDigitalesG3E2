@@ -18,7 +18,7 @@ Este es el repositorio de la asignatura tecnicas digitales.
 
 Indice:
 
-1. [Contador](#sumador-de-3-bits)
+1. [Contador](#Semaforo)
 2. [Simulaciones](#simulaciones)
 3. [Evidencias de implementación](#evidencias-de-implementación)
 4. [Conclusiones](#conclusiones)
