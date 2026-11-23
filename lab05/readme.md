@@ -41,13 +41,22 @@ El diseño consiste en la programación en Verilog de una máquina de estados fi
 
 La siguiente imagen muestra la simulación temporal en GTKWave del controlador de semáforo vehicular y peatonal desarrollado en Verilog. En el diagrama de ondas se verifica la sincronización del sistema frente a las señales de reloj y reinicio, evidenciando la conmutación ordenada y mutuamente excluyente entre las luces vehiculares (rojo, amarillo y verde) y su correcta correspondencia con el paso peatonal (peaton_rojo y peaton_verde), garantizando así la seguridad y el cumplimiento lógico de cada estado.
 
-![Descripción de la imagen](imagen3a/sem.jpg)  
+![Descripción de la imagen](img/imagen3a.jpg)  
 
 ## Evidencias De La Implementación
 
 (https://youtu.be/NPtj6FsX_fE)
 
 ## Conclusiones
+
+* Validación de la máquina de estados: La simulación en GTKWave confirma que la máquina de estados finitos (FSM) diseñada en Verilog ejecuta de manera precisa y secuencial las transiciones entre los estados del semáforo vehicular (rojo, amarillo y verde), cumpliendo con la lógica temporal establecida.
+* Seguridad y exclusión mutua: Se comprobó que las salidas son mutuamente excluyentes y mantienen una sincronización inversa y segura con el semáforo peatonal (peaton_rojo y peaton_verde), evitando estados de conflicto en los que ambos flujos tengan paso simultáneo.
+* Sincronización y estabilidad: El sistema responde correctamente a la señal de reinicio (rst) y mantiene sus cambios de estado alineados con los flancos de la señal de reloj (clk), demostrando que el diseño digital es estable y apto para su posterior implementación física en hardware (FPGA).
+
+## Referencias 
+
+* Chu, P. P. (2008). FPGA Prototyping by Verilog Examples: Xilinx Spartan-3 Version. Wiley-Interscience. KFUPM.
+* Harris, D. M., & Harris, S. L. (2007). Digital Design and Computer Architecture. Morgan Kaufmann. R-5.
 
 
 
