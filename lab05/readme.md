@@ -32,6 +32,11 @@ Indice:
 
 El diseño consiste en la programación en Verilog de una máquina de estados finitos (FSM) que simula el funcionamiento de un semáforo. El sistema controla de manera secuencial y temporizada la transición entre sus tres luces principales: inicia en rojo (detención), cambia a naranja (precaución/transición) y finalmente pasa a verde (avance), asegurando un ciclo lógico, ordenado y sincronizado mediante señales de reloj.
 
+![Descripción de la imagen](img/sem.jpg)  
+![Descripción de la imagen](img/sema.jpg)
+
+
+
 
 
 
