@@ -34,6 +34,7 @@ El diseño consiste en la programación en Verilog de una máquina de estados fi
 
 ![Descripción de la imagen](img/sem.jpg)  
 ![Descripción de la imagen](img/sema.jpg)
+![Descripción de la imagen](img/imagen3a.jpg)
 
 ## Simulaciones
 
@@ -41,7 +42,7 @@ El diseño consiste en la programación en Verilog de una máquina de estados fi
 
 La siguiente imagen muestra la simulación temporal en GTKWave del controlador de semáforo vehicular y peatonal desarrollado en Verilog. En el diagrama de ondas se verifica la sincronización del sistema frente a las señales de reloj y reinicio, evidenciando la conmutación ordenada y mutuamente excluyente entre las luces vehiculares (rojo, amarillo y verde) y su correcta correspondencia con el paso peatonal (peaton_rojo y peaton_verde), garantizando así la seguridad y el cumplimiento lógico de cada estado.
 
-![Descripción de la imagen](img/imagen3a.jpg)  
+![Descripción de la imagen](img/imagen4a.jpg)  
 
 ## Evidencias De La Implementación
 
