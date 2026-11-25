@@ -41,6 +41,21 @@ El funcionamiento del sistema se divide en dos etapas principales:
 
 ![Descripción de la imagen](img/imagen1.jpg)  
 ![Descripción de la imagen](img/imagen2.jpg)
+![Descripción de la imagen](img/imagen6.jpg)
+![Descripción de la imagen](img/imagen7.jpg)
+![Descripción de la imagen](img/imagen8.jpg)
+![Descripción de la imagen](img/imagen9.jpg)
+![Descripción de la imagen](img/imagen10.jpg)
+![Descripción de la imagen](img/imagen11.jpg)
+![Descripción de la imagen](img/imagen12.jpg)
+![Descripción de la imagen](img/imagen13.jpg)
+![Descripción de la imagen](img/imagen14.jpg)
+![Descripción de la imagen](img/imagen15.jpg)
+![Descripción de la imagen](img/imagen16.jpg)
+![Descripción de la imagen](img/imagen17.jpg)
+
+
+.TB
 ![Descripción de la imagen](img/imagen3.jpg)  
 ![Descripción de la imagen](img/imagen4.jpg)  
 
