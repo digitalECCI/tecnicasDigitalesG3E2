@@ -56,6 +56,7 @@ El funcionamiento del sistema se divide en dos etapas principales:
 
 
 .TB
+
 ![Descripción de la imagen](img/imagen3.jpg)  
 ![Descripción de la imagen](img/imagen4.jpg)  
 
